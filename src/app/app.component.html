@@ -1,0 +1,43 @@
+<div class="main-container doc-demo-main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="javascript://">
+                <span class="title">Cloud Account</span>
+            </a>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <!-- Cloud Account form template -->
+            <form clrForm clrLayout="horizontal">
+                <!-- Cloud Account Name -->
+                <clr-input-container>
+                    <label>Cloud Account Name</label>
+                    <input clrInput placeholder="Cloud Account Name" name="cloud-account-name" />
+                </clr-input-container>
+
+                <!-- Cloud Account Id -->
+                <clr-input-container>
+                    <label>Cloud Account Id</label>
+                    <input clrInput placeholder="Cloud Account Name" name="cloud-account-name" />
+                </clr-input-container>
+
+                <!-- Cloud Account Id -->
+                <clr-combobox-container>
+                    <label>Two</label>
+                    <clr-combobox [(ngModel)]="cloudAccountEnvironment" name="two" required>
+                        <clr-options>
+                            <clr-option clrValue="Development">Development</clr-option>
+                            <clr-option clrValue="Staging">Staging</clr-option>
+                            <clr-option clrValue="Production">Production</clr-option>
+                        </clr-options>
+                    </clr-combobox>
+                </clr-combobox-container>
+            </form>
+            <button class="btn">Discard</button>
+            <button class="btn btn-primary">Save</button>
+
+            <!-- /Email form template -->
+        </div>
+    </div>
+</div>
